@@ -21,7 +21,7 @@ plotA<-function(graphDS)
 {
     plot( graphDS$DateTime,
           graphDS$Global_active_power,
-          ylab = "Global Active Power (Kilowatts)",
+          ylab = "Global Active Power",
           type = "l",
           xlab=""
     )
@@ -47,7 +47,8 @@ plotB<-function(graphDS)
     legend("topright",
            c("Sub_metering_1","Sub_metering_2","Sub_metering_3") , 
            lty=1, 
-           col=c("black", "red", "blue"))
+           col=c("black", "red", "blue"),
+           bty = "n")
 }
 
 plotC<-function(graphDS)
